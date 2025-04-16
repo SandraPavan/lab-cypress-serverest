@@ -1,0 +1,21 @@
+{
+  "name": "cypress-serverest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:api": "npx cypress run --spec 'cypress/api/**/*.spec.js' --reporter mochawesome",
+    "test:e2e": "npx cypress run --spec 'cypress/e2e/**/*.spec.js' --reporter mochawesome"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "cypress": "^14.3.0",
+    "cypress-file-upload": "^5.0.8",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
