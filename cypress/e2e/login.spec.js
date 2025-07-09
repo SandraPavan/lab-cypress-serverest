@@ -4,8 +4,8 @@ describe('Testes de Login', () => {
     })
   
     it('Deve exibir mensagem de erro com dados inválidos', () => {
-      cy.visit(`${Cypress.env('baseUrlFront')}/login`)
-  
+     cy.visit(`/login`)
+      
       cy.get('input[data-testid="email"]').type('invalido@teste.com')
       cy.get('input[data-testid="senha"]').type('senhaerrada')
       cy.get('button[data-testid="entrar"]').click()

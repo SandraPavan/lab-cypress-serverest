@@ -20,7 +20,7 @@ Cypress.Commands.add('loginApi', () => {
     const email = Cypress.env('EMAIL');
     const password = Cypress.env('SENHA');
   
-    cy.visit(`${Cypress.env('baseUrlFront')}/login`);
+    cy.visit(`/login`);
   
     cy.get('input[data-testid="email"]').type(email);
     cy.get('input[data-testid="senha"]').type(password);
